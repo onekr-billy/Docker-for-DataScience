@@ -1,12 +1,12 @@
 version: "3.8"
 
 services:
-  condajupyter:
+  anaconda3:
     build: 
       context: .
       dockerfile: Dockerfile
-    container_name: notebooks
-    image: datascience
+    container_name: jupyter-all
+    image: registry.cn-shanghai.aliyuncs.com/onekr/jupyter-all:latest
     tty: true
     ports:
         - 8888:8888
